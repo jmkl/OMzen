@@ -1,0 +1,24 @@
+[
+	{
+		"package" : "com.bbm",
+		"icon":{
+			"nama" : "ic_notification",
+			"ic" : "com_bbm_notif_icon"			
+		},
+		"icon":{
+			"nama" : "ic_notification_splat",
+			"ic" : "com_bbm_notif_icon_splat"			
+		}
+	},
+	{
+		"package" : "com.facebook.katana",
+		"icon":{
+			"nama" : "ic_notification",
+			"ic" : "com_facebook_notif_icon"			
+		},
+		"icon":{
+			"nama" : "ic_notification_splat",
+			"ic" : "com_facebook_notif_icon_splat"			
+		}
+	}
+]

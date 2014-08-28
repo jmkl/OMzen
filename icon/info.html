@@ -1,0 +1,95 @@
+<html>
+<head>
+	<style type="text/css">
+	*{font-family: serif;}
+	</style>
+
+</head>
+<b><h3>Iniloh OMZen versi Alpha 1.4</b></h3>
+<b><a href="https://www.facebook.com/notes/official-lounge-asus-zenfone-4/xposed-module-omzen/278563895661207">LAPOR BUGS KRITIK & SARAN GAN</a></b></br>
+<b><a href="https://www.facebook.com/groups/227891270728470/277956479055282/">CEK UPDATE GAN</a></b>
+<p><b>Changelog 1.4</p></b>
+<ul>
+	<p><b>Mohon utk update ini folder default_icon nya di hapus dulu (backup dulu icon agan kalo ada)
+		lalu jalankan apps OMZen.. trus reboot dah.. OK gan</b></p>
+	<li>Tambahin Statusbar Layoutnya jadi 13</li>
+	<li>Fix icon membesar pas di cas (mungkin)</li>
+	<li>Fix icon kekecilan di Zenfone 5 mungkin juga :D (Tesin dong gan n umpan balik ya :D)</li>
+	<li>Tambahin font buat Jam</li>
+	<li>Tambahin beberapa icon d statusbar</li>
+	<li>Custom Icon Notifikasi BBM (kalo mau bantu tambahin app lain. ane butuh nama icon notifnya sama nama paket appsnya contoh ini kan bbm paket:com.bbm namaikon:ic_notification.png)</li>
+	<li>dll</li>
+</ul>
+<p><b>Changelog 1.3</p></b>
+<ul>
+	<li>Nambah menu buat atur format jam pake SimpleDateFormat (Tambahkan symbol "^" tanpa tanda kutip di awal untuk menjadikannya UPPERCASE Contoh : ^HH:mm a akan menjadi : 12:00 AM</li>
+	<pre>
+		SimpleDateFormat
+
+		"D"	 ->	"day in year"
+		"E"	 ->	"day of week"
+		"F"	 ->	"day of week in month"
+		"G"	 ->	"era designator"
+		"H"	 ->	"hour in day (0-23)"
+		"K"	 ->	"hour in am/pm (0-11)"
+		"L"	 ->	"stand-alone month"
+		"M"	 ->	"month in year"
+		"S"	 ->	"fractional seconds"
+		"W"	 ->	"week in month"
+		"Z"	 ->	"time zone (RFC 822)"
+		"a"	 ->	"am/pm marker"
+		"c"	 ->	"stand-alone day of week"
+		"d"	 ->	"day in month"
+		"h"	 ->	"hour in am/pm (1-12)"
+		"k"	 ->	"hour in day (1-24)"
+		"m"	 ->	"minute in hour"
+		"s"	 ->	"second in minute"
+		"w"	 ->	"week in year"
+		"y"	 ->	"year"
+		"z"	 ->	"time zone"
+		"'"	 ->	"escape for text"
+		"''" ->	"single quote"
+	</pre>
+		<li>Anuin Tombol QuickSettings di notifikasi (sekarang ude bisa di kustomisasi tombolnya)</li>
+			<li>Anuin SliderBrightness</li>
+				<li>Anuin Ikon notifikasi biar ga nabrak</li>
+</ul>
+<p><b>Changelog 1.2</p></b>
+<ul><li>Tambahin 4 layout statusbar (silahkan beri masukan kemungkinan layout statusbarnya gan)
+ada 4 item itu yang bisa di atur2 letaknya<pre>
+	-baterai
+	-sinyal inout sim1sim2
+	-jam
+	-icon notifikasi
+</pre>
+</li></ul>
+<p><b>Changelog 1.1</p></b>
+<ul><li>Tambahin tombol restart SystemUI (jadi kaga perlu reboot, setelah Ganti Icon)</li></ul>
+
+<b><h3>Pertanyaan yang sering di ajukan</b></h3>
+<p><b>Apa Ini gan?</p></b>
+<ul><li>Ini Module Xposed Gan, jadi agan kudu install xposed framework dulu</li></ul>
+
+<p><b>Gimana cara install xposed gan?</p></b>
+<ul><li>Cek <a href="https://www.facebook.com/notes/official-lounge-asus-zenfone-4/cara-install-xposed-installer-di-zenfone-4/266264483557815">Di Sini Gan</a></li></ul>
+
+<p><b>Minimal Xposed versi berapa gan?</p></b>
+<ul><li>ane tes pake v 2.7 experimental 1</li></ul>
+
+<p><b>Gimana cara install ini?</p></b>
+<ul><li>Install kaya applikasi biasa gan lalu aktifkan module d Xposed Panel</li></ul>
+
+<p><b>Bisa apa aj nih module?</p></b>
+<ul><li>Ganti statusbar iconnya gan (cek sdcard/default_icon)</li>
+<li>Atur ulang layout statusbar gan (nyatuin sinyal sama icon sim biar ga makan banyak tempat gan)</li>
+<li>4 way reboot gan (fork dari module Gravitybox @Peter Gregus)</li></ul>
+
+<p><b>Ini bisa buat versi mana gan?</p></b>
+<ul><li>Ane udah tes di 4.3.5 sama 4.3.6</li>
+<li>ada juga yang udah tes d 4.3.9</li>
+<li>kalo 4.3.2 ga bisa gan.. kemaren ane bikinnya pas pake 4.3.2, pas update 4.3.5 ga bisa lagi
+setelah ane cek ternyata banyak perubahan dari 4.3.2 ke 4.3.5 di systemui nya gan</li></ul>
+
+<p><b>Ane ada masukan nih gan / eh gan ane nemu bugs nih?</p></b>
+<ul><li>Monggo pos masukannya di komen gan, ato PM ane gan. InsyaAllah tak anuin</li></ul>
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hello.dcsms.omzen"
+    android:installLocation="internalOnly"
+    android:versionCode="2"
+    android:versionName="@string/versi" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="2.1*" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Zenfone 4 Statusbar Tools\n\tFitur :\n\t\t-Customizable icon statusbar n Background NotificationBar (cek \/sdcard\/default_icon/)\n\t\t-4 Way Reboot (fork dari GravityBox)\n\t\t-Custom Jam Statusbar" />
+
+        <activity
+            android:name="hello.dcsms.omzen.Panel.RootPanel"
+            android:label="@string/title_activity_panel_kontrol"
+            android:theme="@style/AppBaseTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="hello.dcsms.omzen.Panel.ONLINE"
+            android:theme="@style/AppBaseTheme" >          
+        </activity>
+        <activity
+            android:name="hello.dcsms.omzen.OMzenSetting"
+            android:label="OMZ Help" >
+        </activity>
+        <activity
+            android:name="hello.dcsms.omzen.Sett"
+            android:label="OMZ Settings" >
+        </activity>
+        <activity
+            android:name="hello.dcsms.omzen.theme.HelloTheme"
+            android:label="OMZ Theme" >
+        </activity>
+        <activity
+            android:name=".Util.ThemeViewer"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.omztheme"
+                    android:scheme="http" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.omztheme"
+                    android:scheme="https" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.omztheme"
+                    android:scheme="content" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.omztheme"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <!-- <provider android:authorities="com.facebook.app.NativeAppCallContentProvider304153656422785" -->
+        <!-- android:name="com.facebook.NativeAppCallContentProvider" -->
+        <!-- android:exported="true"/> -->
+    </application>
+
+</manifest>

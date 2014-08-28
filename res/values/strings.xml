@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="versi">Beta 8</string>
+    <string name="app_name">OMZen</string>
+    <string name="title_activity_panel_kontrol">OMZ</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Help</string>
+    <string name="alphashi">Restart SystemUI</string>
+    <string name="hint">Ketikkan Format Jam Disini</string>
+    <string name="restart">Restart SystemUI</string>
+    <string name="app_id">304153656422785</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>    
+</resources>

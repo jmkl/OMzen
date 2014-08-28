@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="72"
+        android:entries="@array/IC_NOTIF_NAMA"
+        android:entryValues="@array/IC_NOTIF_NUM"
+        android:key="ICON_MERGE_WIDTH"
+        android:summary="Pilih jumlah ikon notifikasi yang akan ditampilkan pada statusbar biar kaga empet2an"
+        android:title="Lebar Notification Icon" />
+
+    <!-- <EditTextPreference -->
+    <!-- android:defaultValue="72" -->
+    <!-- android:enabled="true" -->
+    <!-- android:inputType="number" -->
+    <!-- android:key="ICON_MERGE_WIDTH" -->
+    <!-- android:summary="Ukuran ikon notifikasi itu 36px (24dip) jika agan mau tongolin 3 icon notifikasi cukup ganti valuenya jadi 36 * 3 = 108, seandainya notifikasi lebih dari 3 maka akan dimunculkan icon stat_notif_more" -->
+    <!-- android:title="Lebar Notification Icon" /> -->
+
+
+    <!-- <ListPreference -->
+    <!-- android:entries="@array/STATBAR_LAYOUT_NAMA" -->
+    <!-- android:entryValues="@array/STATBAR_LAYOUT_INTEGER" -->
+    <!-- android:key="TES" -->
+    <!-- android:summary="Setting buat atur ulang layout Statusbar. sementara ada 13 style.(ini sama fungsinya sama tombol STATUSBAR STYLE PANIC BUTTON) jika agan punya ide tambahan utk layout statusbar silahkan kontak ane gan. info selanjutnya cek di menu OMZ Help" -->
+    <!-- android:title="Statusbar Style" /> -->
+
+    <CheckBoxPreference
+        android:key="MOD_POWER_MENU"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:summary="Uncheck ini apabila menggunakan Module GravityBox"
+        android:summaryOff="4 Way Reboot OFF"
+        android:summaryOn="4 Way Reboot ON\nUncheck ini apabila menggunakan Module GravityBox (bentrok dia)"
+        android:title="4 Way Reboot n Screenshot" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="OMNOTIFIKASI"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:summary="Untuk user zenfone 5 yang mengalami notifikasi error silahkan UNCHECK opsi ini. dan nikmati saja statusbar omzennya :D"
+        android:title="MOD Notifikasi Bar" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:dependency="OMNOTIFIKASI"
+        android:key="BLUR_NOTIFIKASI"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:summary="Mesti restart systemui dulu"
+        android:title="Transparent Blur Notification" />
+
+    <EditTextPreference
+        android:defaultValue="16"
+        android:enabled="true"
+        android:inputType="number"
+        android:key="JAM_SIZE"
+        android:summary="Ukuran teks untuk jam, traffic, teks batrai"
+        android:title="Ukuran jam, traffic, teks batrai" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        alphaSlider="true"
+      
+        android:defaultValue="@integer/COLOR_BLACK"
+        android:enabled="true"
+        android:key="JAM_WARNA"
+        android:summary=""
+        android:title="Warna jam, traffic, teks batrai" />
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        alphaSlider="true"
+        android:defaultValue="@integer/COLOR_BLACK"
+        android:enabled="true"
+        android:key="WARNA_JAM_NOTIF"
+        android:summary=""
+        android:title="Warna jam di notifikasi" />
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        alphaSlider="true"
+        android:defaultValue="@integer/COLOR_BLACK"
+        android:enabled="true"
+        android:key="WARNA_QS_NOTIF"
+        android:summary=""
+        android:title="Warna text QuickSetting/Notification" />
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        alphaSlider="true"
+        android:defaultValue="@integer/COLOR_BLACK"
+        android:enabled="true"
+        android:key="WARNA_TEKS_TOGEL"
+        android:summary="Mesti restart systemui dulu"
+        android:title="Warna teks Toggles" />
+<!--         <net.margaritov.preference.colorpicker.ColorPickerPreference -->
+<!--         alphaSlider="true" -->
+<!--         android:defaultValue="@integer/COLOR_BLACK" -->
+<!--         android:enabled="true" -->
+<!--         android:key="WARNA_CARRIERNWIFI" -->
+<!--         android:summary="" -->
+<!--         android:title="Warna teks Carrier n Wifi" /> -->
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="TRAFFIC"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:summary="Download speed meter"
+        android:title="Trafficstate" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="CUSTOM_FONT"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:summary="Pakai font dari tema"
+        android:title="Custom font" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="SMALL_SINYAL"
+        android:widgetLayout="@layout/preference_widget_checkbox"
+        android:summary="Susun ikon sinyal vertical/horizontal"
+        android:title="Susun Icon Sinyal" />
+
+    <PreferenceCategory android:title="Tentang" >
+        <PreferenceScreen
+            android:key="JMKL"
+            android:summary="silahkan inbox saya di facebook http://fb.com/jimikill666 jika saudara hendak memberikan kritik, saran, laporan bugs,donasi dan sebagainya"
+            android:title="dcsms" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

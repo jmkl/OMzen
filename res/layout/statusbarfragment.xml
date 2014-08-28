@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/leotpreview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/prev_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/dump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:shadowColor="#aa000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@android:color/white"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/statusbarlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leotpreview"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombol" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/statusbarrestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusbarlayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombol"
+         />
+
+</RelativeLayout>

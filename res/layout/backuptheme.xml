@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/bt_namatema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Tema" />
+
+            <EditText
+                android:id="@+id/bt_namaauthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pengrajin" />
+
+            <EditText
+                android:id="@+id/bt_versi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Versi" />
+
+            <EditText
+                android:id="@+id/bt_kontak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kontak" />
+
+            <EditText
+                android:id="@+id/bt_keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Keterangan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/ss1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/ss2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_ss1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Screenshot 1" />
+
+            <Button
+                android:id="@+id/bt_ss2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Screenshot 2" />
+
+            <Button
+                android:id="@+id/bt_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Backup Sekarang" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

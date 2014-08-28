@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingRight="10dip"
+    android:weightSum="1" >
+
+    <View
+        android:layout_width="10dip"
+        android:layout_height="match_parent"
+        android:background="#aa000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".9"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="2sp" >
+
+        <TextView
+            android:id="@+id/olt_namatema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Tema" />
+
+        <TextView
+            android:id="@+id/olt_uploader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diupload oleh" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/olt_donlot"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:scaleType="centerInside"
+        android:src="@drawable/com_facebook_button_check_on" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cekparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Ikon Baterai"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Ikon Sinyal"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Icon Sinyal InOut"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Ikon QuickSetting Toggle"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Background QuickSetting Toggle"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Background Notifikasi"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Background Statusbar"
+            android:textColor="@color/com_facebook_blue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Ikon Lainnya "
+            android:textColor="@color/com_facebook_blue" />
+    </LinearLayout>
+
+</ScrollView>
